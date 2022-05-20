@@ -54,6 +54,7 @@ html {
 .presentation{
     /* background-color: gainsboro; */
     display: flex;
+    border-bottom: .1px solid #dddde0;
 }
     .presentation_information{
         /* background-color: rgb(73, 68, 68); */
@@ -119,3 +120,45 @@ html {
         background-color: rgb(231, 164, 205);
         width: 50%;
     }
+.gallery{
+    display:flex;
+    flex-direction: column;
+}
+    .gallery_title{
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        font-size:1.3rem
+    }
+    .gallery_title a{
+        text-decoration: none;
+        color: #29292b;
+    }
+    .gallery_cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2%;
+    }
+        .card{
+            /* background: gray; */
+            font-size: 1.4rem;
+            width: 32%;
+            border: .1px solid #dddde0;
+            border-radius: .8rem;
+            margin-top: 2rem;
+        }
+        .card img{
+            max-width: 100%;
+        }
+        .card_description{
+            padding: .6rem;
+        }
+            .description{
+                display: flex;
+                justify-content: space-between;
+                font-size: 1.5rem;
+                font-weight:bold;
+            }
